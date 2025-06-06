@@ -29,6 +29,10 @@ li{
   justify-content: center;
   align-items: center;
 }
+a{
+  text-decoration: none;
+  color: #e0e0e0;
+}
 .logo{
     margin: 0 80px;
 }
@@ -43,7 +47,7 @@ li{
 }
 .nav-links a {
   margin: 10px 30px;
-  color: white;
+  color: #e0e0e0;
   text-decoration: none;
   font-weight: 500;
   transition: color 0.3s;
@@ -54,7 +58,21 @@ li{
   transition: 1s;
   color: #c44ef2;
 }
+.lang-btn {
+  background-color: transparent;
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  padding: 8px 12px;
+}
 
+.lang-btn.active-lang {
+  color: #c44ef2;
+  font-size: 18px;
+
+}
 /* Scroll effect class */
 .scrolled {
   background-color: rgba(255, 255, 255, 0.1);
@@ -133,19 +151,27 @@ li{
 /* section 2 */
 
 .section2{
-    height: 2000px;
-    background-color:#0e0014;
+  padding-top: 50px;
+
+  height: 1800px;
+  background-color: #0e0014;
+  background-image:
+  radial-gradient(#300b60 1px, transparent 0.7px),
+  radial-gradient(#50159e 1px, transparent 0.7px);
+  background-size: 300px 300px, 400px 400px;
+  background-position: 0 0, 150px 150px;
 }
 .section2_title{
   text-align: center;
   padding-top: 60px;
 }
-.section2_title p{
+.title2{
   font-size: 50px;
-  color: #e0e0e0;
-}
-.section2_title span{
   color: #c44ef2;
+}
+.subtitle{
+  color: #e0e0e0;
+  letter-spacing: 2px;
 }
 .section2_cards{
   border-radius: 10px;
@@ -163,6 +189,7 @@ li{
   width: 500px;
   margin: 20px 20px;
   border-radius: 10px;
+  box-shadow:0 0 7px 1px #f3caff;
 }
 .cardInfo{
   width: 500px;
@@ -219,29 +246,76 @@ li{
   cursor: pointer;
   background-color: #9d2acb;
   color: #f9f9f9;
+  
   transition: 1s;
 }
 .cardInfo_buttons button:hover{
   transition: 1s;
   background-color: #f9f9f9;
   color: #9d2acb;
+  
 }
-
-/* section3 */
+/*section3*/
 .section3{
-  height: 100vh;
   background-image: url(imgs/background/wallpaper.png);
   background-repeat: no-repeat;
   background-size: cover;
+  text-align: center;
+  padding-top: 100px;
 }
-.section3_form{
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 20px;
+    text-align: center;
+    max-width: 600px;
+    margin: 0px auto;
+    padding-top: 60px;
+    padding-bottom: 200px;
+  
+  }
+
+  .skill-item img {
+    width: 40px;
+    height: 40px;
+    margin-bottom: 8px;
+    transition: transform 0.2s;
+  }
+
+  .skill-item img:hover {
+    transform: scale(1.1);
+  }
+
+  .skill-name {
+    font-size: 16px;
+    color: #e0e0e0;
+    font-weight: bold;
+  }
+  .learning{
+    font-size: 10px;
+    color: #e0e0e0;
+    font-style: italic;
+  }
+
+/* section4 */
+.section4{
+  height: 100vh;
+  background-color: #0e0014;
+  background-image:
+    radial-gradient(#300b60 1px, transparent 0.7px),
+    radial-gradient(#50159e 1px, transparent 0.7px);
+  background-size: 300px 300px, 400px 400px;
+  background-position: 0 0, 150px 150px;
+  padding-top: 100px;
+}
+.section4_form{
   display: flex;
   justify-content: center;
   padding-top: 80px;
 }
-.section3 img{
+.section4 img{
   width: 400px;
-  height: 600px;
+  height: 400px;
 }
 .contact-form {
   padding: 70px ;
@@ -250,23 +324,64 @@ li{
   gap: 15px;
   text-align: center;
 }
+.contact-info{
+  padding-top: 150px;
+  padding-left: 100px;
+}
 
-input, textarea{
-  border-radius: 10px;
-  border: none;
-}
-.contact-form button{
-  margin: 20px 0 0 0;
-  cursor: pointer;
-  font-weight: 600;
-  background-color: #9d2acb;
-  color: #f9f9f9;
-  border: none;
-  border-radius: 10px;
-  height: 30px;
-  transition: 1s;
-}
-.contact-form button:hover{
-  background-color: #f9f9f9;
-  color: #9d2acb;
-}
+/* FOOTER */
+  footer {
+    background-image: url(imgs/background/wallpaper.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fff;
+    padding: 20px 10px;
+    text-align: center;
+    font-size: 14px;
+    padding-top: 100px;
+    padding-bottom: 50px;
+  }
+
+  .footer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .footer-logo img {
+    width: 50px;
+    height: auto;
+  }
+
+  .footer-icons {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .footer-icons a img {
+    width: 24px;
+    height: 24px;
+    transition: transform 0.2s;
+  }
+
+  .footer-icons a:hover img {
+    transform: scale(1.2);
+  }
+
+  .footer-bottom {
+    margin-top: 10px;
+    font-size: 13px;
+    color: #aaa;
+  }
+
+  .footer-bottom a {
+    color: #c44ef2;
+    text-decoration: none;
+  }
+
+  .footer-bottom a:hover {
+    text-decoration: underline;
+  }

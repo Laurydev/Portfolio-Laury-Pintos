@@ -1,0 +1,45 @@
+{
+  "header":{
+       "home" : "Inicio",
+       "projects": "Proyectos",
+       "skill":"Habilidades",
+       "contact": "Contacto",
+       "linkedin": "LinkedIn",
+       "github":"GitHub"
+    },
+
+
+    "section1":{
+        "title":"Desarrolladora Front-End",
+        "p1": "Hola, soy Laury. Como desarrolladora front-end, disfruto crear sitios web modernos y responsivos.",
+        "p2": "Me encanta el diseño y hacer que cada sitio sea único.",
+        "p3": "Soy en gran parte autodidacta y muy dedicada en todo lo que hago.",
+        "p4": "Siempre disfruto aprender y probar nuevas herramientas para mejorar mi trabajo.",
+        "p5": "Disfruto convertir el código en algo que otros puedan ver, usar y disfrutar.",
+        "p6": "Si querés conocerme más o trabajar conmigo, no dudes en escribirme.",
+        "btn1":"Descargar CV",
+        "btn2":"Contáctame"
+    },
+
+
+    "section2":{
+        "title": "Mis Proyectos",
+        "subtitle":"Donde el código se convierte en experiencias",
+        "proj1": "Este conversor online te ayuda a calcular el valor de cualquier cantidad entre diferentes monedas en segundos. Es fácil de usar, rápido y ofrece resultados precisos.<br><br>  Tiene un diseño claro, amigable y completamente adaptable a todos los dispositivos.",
+        "proj2": "Esta tienda online ofrece una experiencia de compra rápida, simple y agradable, ideal para cualquier negocio que quiera vender café u otros productos gourmet; <br><br> los usuarios pueden ver productos con imágenes y descripciones, agregar artículos al carrito, revisar el resumen de compra y usar cupones de descuento para finalizar fácilmente.",
+        "proj3": "Este sitio web está hecho para personas que quieren obtener la ciudadanía italiana. Tiene una estructura clara y es fácil de usar. La información está organizada, es confiable y se ve bien.<br><br>Podés encontrar detalles sobre las diferentes formas de obtener la ciudadanía, ver al abogado italiano, visitar las redes sociales y mucho más. Es un sitio ideal para quienes quieren ofrecer un servicio de forma clara y agradable.",
+        "proj4": "Este juego de memoria fue creado para poner a prueba la concentración y la agilidad visual del usuario.<br><br>El objetivo es simple: encontrar todas las parejas de cartas iguales usando la menor cantidad de intentos. Ofrece una experiencia rápida, divertida y visualmente atractiva para todas las edades. Es fácil de jugar, pero también te hace pensar.",
+        "proj5": "Este juego fue creado especialmente para niños: es fácil de jugar, divertido y con un buen aspecto visual. Tiene una interfaz amigable y colorida. Solo se necesita un clic para hacer saltar al gato — controles muy simples.<br><br>Ideal para niños: ayuda a desarrollar los reflejos, la concentración y la coordinación. Las animaciones suaves y los elementos visuales simpáticos hacen que el juego sea aún más amigable.",
+
+        "btnproj1":"Ver Repositorio",
+        "btnproj2":"Ver Página"
+    },
+    "section3":{
+        "title": "Mis Habilidades",
+        "learning": "Actualmente aprendiendo"
+    },
+    "section4":{
+        "title":"Contacto",
+        "subtitle":"Ponete en contacto conmigo"
+    }
+}

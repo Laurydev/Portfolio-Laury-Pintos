@@ -19,35 +19,45 @@
             <ul class="nav-links animate__animated animate__slideInLeft">
                 <li>
                     <img src="imgs/icons/home.png" alt="">
-                    <a href="#inicio">Home</a>
+                    <a href="#inicio" data-section="header" data-value="home">Home</a>
                 </li>
                 <li>
                     <img src="imgs/icons/projects.png" alt="">
-                    <a href="#proyectos">Projects</a>
+                    <a href="#proyectos" data-section="header" data-value="projects">Projects</a>
                 </li>
                 <li>
-                    <img src="imgs/icons/contact.png" alt="">
-                    <a href="#contacto">Contact</a>
+                    <img src="imgs/icons/skill-development.png" alt="">
+                    <a href="#skill" data-section="header" data-value="skill" >Skills</a>
                 </li>
             </ul>
             <div class="logo animate__animated animate__slideInDown">
                 <img src="imgs/icons/logo.png" alt="">
+                <div class="btnsLenguage">
+                    <button class="lang-btn active-lang" data-language="en">EN</button>
+                    <button class="lang-btn" data-language="es">ES</button>
+                </div>
             </div>
             <ul class="nav-links animate__animated animate__slideInRight">
                 <li>
+                    <img src="imgs/icons/contact.png" alt="">
+                    <a href="#contact" data-section="header" data-value="contact" >Contact</a>
+                </li>
+                <li>
                     <img src="imgs/icons/linkedin.png" alt="">
-                    <a href="#inicio">LinkedIn</a>
+                    <a href="#linkedin" data-section="header" data-value="linkedin">LinkedIn</a>
                 </li>
                 <li>
                     <img src="imgs/icons/github.png" alt="">
-                    <a href="#proyectos">GitHub</a>
+                    <a href="#github" data-section="header" data-value="github">GitHub</a>
                 </li>
                 <li>
-                    <img src="imgs/icons/translate.png" alt="">
-                    <a href="#sobre-mi">EN-ES</a>
+                    <!-- <div class="btnsLenguage">
+                        <button class="lang-btn active-lang" data-language="en">EN</button>
+                        <button class="lang-btn" data-language="es">ES</button>
+                    </div> -->
+                 
                 </li>
             </ul>
-            
         </nav>
     </header>
 
@@ -57,15 +67,17 @@
             <img src="imgs/icons/me.png" alt="">
         </div>
         <div class="section1_info">
-            <p class="title">Front End Developer</p><br>
-            <p>I'm Laury, I’m passionate about visual design and user experience. <br> I enjoy approaching every challenge with creativity and efficiency. </p> <br>
-            <p> As a front-end developer, I create modern, functional, and responsive websites.
-            <br> I'm constantly learning to incorporate new technologies <br> and deliver up-to-date, effective solutions.</p>
-            <br> <p>I turn lines of code into experiences that connect.</p><br>
-            <p>If you’d like to get to know me and work together, feel free to reach out.</p>    
+            <p class="title" data-section="section1" data-value="title">Front End Developer</p><br>
+            <p data-section="section1" data-value="p1">Hi, I'm Laury. As a front-end developer, 
+            I enjoy creating modern and responsive websites.</p>
+            <p data-section="section1" data-value="p2">I love design and making each site unique.</p>
+            <p data-section="section1" data-value="p3">I'm mostly self-taught and very dedicated to everything I do.</p>
+            <p data-section="section1" data-value="p4"> I always enjoy learning and trying new tools to improve my work.</p><br>
+            <p data-section="section1" data-value="p5">I enjoy turning code into something others can see, use, and enjoy.</p>    
+            <br><p data-section="section1" data-value="p6">If you’d like to know more about me or work together, feel free to contact me</p>
             <div class="section1_buttons animate__animated animate__slideInUp">
-                <button>Download CV</button>
-                <button>Contact me</button>
+                <button data-section="section1" data-value="btn1">Download CV</button>
+                <button data-section="section1" data-value="btn2">Contact me</button>
             </div>
             <div class="scroll">
                 <img src="imgs/icons/scroll-bar.png" alt="">
@@ -75,7 +87,8 @@
         </div>
     <section class="section2">
         <div class="section2_title">
-            <p>Some <span>Projects</span></p>
+            <p class="title2" data-section="section2" data-value="title">Some Projects</p>
+            <p class="subtitle" data-section="section2" data-value="subtitle">Where code becomes experiences</p>
         </div>
         <div class="section2_cards">
             <!-- project1 -->
@@ -90,19 +103,19 @@
                         <p class="js">JavaScript</p>
                     </div>
                     <div class="cardInfo_text">
-                        <p>This online converter allows you to calculate the value
-                        of any amount between different currencies in seconds.
-                        It's simple, fast, and accurate. <br><br>
-                        Ideal for travelers, freelancers, online shoppers, or anyone who needs to know how much their money is worth without wasting time. <br>
-                        Designed with a clear, friendly and fully responsive interface.
+                        <p data-section="section2" data-value="proj1">
+                            This online converter helps you calculate 
+                            the value of any amount between different currencies in seconds.
+                            It’s easy to use, fast, and gives accurate results. <br><br>
+                            Designed with a clear, friendly and fully responsive interface.
                         </p>
                     </div>
                     <div class="cardInfo_buttons">
                         <button>
-                            <a href="https://github.com/Laurydev/Currency-converter" target="_blank">View Repository</a>
+                            <a href="https://github.com/Laurydev/Currency-converter" target="_blank" data-section="section2" data-value="btnproj1">View Repository</a>
                         </button>
                         <button>
-                            <a href="https://fanciful-medovik-cfbd4e.netlify.app/" target="_blank">View Page</a>
+                            <a href="https://fanciful-medovik-cfbd4e.netlify.app/" target="_blank" data-section="section2" data-value="btnproj2">View Page</a>
                         </button>
                     </div>  
                 </div> 
@@ -119,17 +132,22 @@
                         <p class="js">JavaScript</p>
                     </div>
                     <div class="cardInfo_text">
-                        <p>This online store is designed to offer a fast, clear, 
-                           and engaging shopping experience, ideal for any business 
-                           looking to sell coffee or other gourmet products online.<br><br>
-                           The site allows users to: Browse products with images and descriptions, 
-                           add to cart and view purchase summary, apply discount coupons and 
-                           complete purchase easily.
+                        <p data-section="section2" data-value="proj2" >
+                            This online store gives a fast, 
+                            simple, and fun shopping experience. It’s great for any business that wants
+                            to sell coffee or gourmet products online.<br><br> 
+                            Users can: See products with images and descriptions, 
+                            Add items to the cart and check the order summary and 
+                            Use discount coupons and finish the purchase easily. 
                         </p>
                     </div>
                     <div class="cardInfo_buttons">
-                        <button>View Repository</button>
-                        <button>View Page</button>
+                        <button>
+                            <a href="https://github.com/Laurydev/Currency-converter" target="_blank" data-section="section2" data-value="btnproj1">View Repository</a>
+                        </button>
+                        <button>
+                            <a href="https://fanciful-medovik-cfbd4e.netlify.app/" target="_blank" data-section="section2" data-value="btnproj2">View Page</a>
+                        </button>
                     </div>  
                 </div> 
             </div>
@@ -145,17 +163,22 @@
                         <p class="js">JavaScript</p>
                     </div>
                     <div class="cardInfo_text">
-                        <p>A website designed to guide those wishing to obtain Italian citizenship.
-                           Designed with a clear and accessible structure, 
-                           this platform offers reliable, well-organized and visually pleasing information. <br><br>
-                           Contains detailed information on the different paths to obtaining citizenship, 
-                           presentation of the Italian lawyer, access to social networks and much more. <br><br>
-                           An ideal website for those who want to offer a service in a clear and aesthetic way.
+                        <p data-section="section2" data-value="proj3" >
+                            This website is made for people who want to get 
+                            Italian citizenship. It has a clear structure and is easy to use. 
+                            The information is organized, reliable, and looks good. <br><br> 
+                            You can find details about different ways to get citizenship, see the Italian lawyer, 
+                            visit social media pages, and more. 
+                            It is a great site for anyone who wants to offer a service in a clear and nice way.
                         </p>
                     </div>
                     <div class="cardInfo_buttons">
-                        <button>View Repository</button>
-                        <button>View Page</button>
+                        <button>
+                            <a href="https://github.com/Laurydev/Currency-converter" target="_blank" data-section="section2" data-value="btnproj1">View Repository</a>
+                        </button>
+                        <button>
+                            <a href="https://fanciful-medovik-cfbd4e.netlify.app/" target="_blank" data-section="section2" data-value="btnproj2">View Page</a>
+                        </button>
                     </div>  
                 </div> 
             </div>
@@ -171,16 +194,20 @@
                         <p class="js">JavaScript</p>
                     </div>
                     <div class="cardInfo_text">
-                        <p>This memory game was developed to test the user's 
-                           concentration and visual agility. 
-                           The objective is simple: find matching pairs of cards in as few attempts as possible. <br><br>
-                           Offer a fast-paced, fun, and visually appealing experience, ideal for all ages. 
-                           Its simple mechanics make it easy to play, but also a mental challenge. 
+                        <p data-section="section2" data-value="proj4" >
+                            This memory game was made to test the user’s focus and visual speed.<br><br>
+                            The goal is simple: find all the matching card pairs using the fewest tries. 
+                            It gives a fast, fun, and nice-looking experience for all ages. 
+                            The game is easy to play, but it also makes you think.
                         </p>
                     </div>
                     <div class="cardInfo_buttons">
-                        <button>View Repository</button>
-                        <button>View Page</button>
+                        <button>
+                            <a href="https://github.com/Laurydev/Currency-converter" target="_blank" data-section="section2" data-value="btnproj1">View Repository</a>
+                        </button>
+                        <button>
+                            <a href="https://fanciful-medovik-cfbd4e.netlify.app/" target="_blank" data-section="section2" data-value="btnproj2">View Page</a>
+                        </button>
                     </div>  
                 </div> 
             </div>
@@ -196,51 +223,118 @@
                         <p class="js">JavaScript</p>
                     </div>
                     <div class="cardInfo_text">
-                        <p>This game was designed especially for kids: 
-                           easy to play, visually appealing, and super fun. <br> <br>
-                           Fun and friendly interface. <br>
-                           Simple controls: just one click to make the cat jump. <br>
-                           Ideal for children: develops reflexes, attention, and coordination. <br>
-                           Smooth animations and visual elements generate empathy.
+                        <p data-section="section2" data-value="proj5" >
+                            This game was made especially for kids: it’s easy to play, fun, and looks nice.
+                             It has a friendly and colorful interface. 
+                             Just one click makes the cat jump — very simple controls. <br> <br> 
+                             Great for children: it helps with reflexes, focus, and coordination. 
+                             Soft animations and cute visuals make the game more friendly.
                         </p>
                     </div> 
                     <div class="cardInfo_buttons">
-                        <button>View Repository</button>
-                        <button>View Page</button>
+                        <button>
+                            <a href="https://github.com/Laurydev/Currency-converter" target="_blank" data-section="section2" data-value="btnproj1">View Repository</a>
+                        </button>
+                        <button>
+                            <a href="https://fanciful-medovik-cfbd4e.netlify.app/" target="_blank" data-section="section2" data-value="btnproj2">View Page</a>
+                        </button>
                     </div>  
                 </div> 
             </div>
-
-        
         </div>
     </section>
-    <div class="section3">
-        <div class="section2_title">
-            <p>Contact <span>Me</span></p>
+
+    <section class="section3">
+        <p class="title2" data-section="section3" data-value="title">My Skills</p>
+        <p class="subtitle" data-section="section3" data-value="subtitle""></p>
+        
+        <div class="skills-grid">
+            <div class="skill-item">
+                <img src="https://cdn.simpleicons.org/html5/E34F26" alt="HTML">
+                <div class="skill-name">HTML</div>
+            </div>
+            <div class="skill-item">
+                <img src="https://cdn.simpleicons.org/css3/1572B6" alt="CSS">
+                <div class="skill-name">CSS</div>
+            </div>
+            <div class="skill-item">
+                <img src="https://cdn.simpleicons.org/bootstrap/7952B3" alt="Bootstrap">
+                <div class="skill-name">Bootstrap</div>
+            </div>
+            <div class="skill-item">
+                <img src="https://cdn.simpleicons.org/tailwindcss/06B6D4" alt="Tailwind">
+                <div class="skill-name">Tailwind</div>
+            </div>
+            <div class="skill-item">
+                <img src="https://cdn.simpleicons.org/javascript/F7DF1E" alt="JavaScript">
+                <div class="skill-name">JavaScript</div>
+            </div>
+            <div class="skill-item">
+                <img src="https://cdn.simpleicons.org/typescript/3178C6" alt="TypeScript">
+                <div class="skill-name">TypeScript</div>
+                <p class="learning" data-section="section3" data-value="learning">Currently learning</p>
+
+            </div>
+            <div class="skill-item">
+                <img src="https://cdn.simpleicons.org/react/61DAFB" alt="React">
+                <div class="skill-name">React</div>
+                <p class="learning" data-section="section3" data-value="learning">Currently learning</p>
+            </div>
+            <div class="skill-item">
+                <img src="https://cdn.simpleicons.org/git/F05032" alt="Git">
+                <div class="skill-name">Git</div>
+            </div>
+            <div class="skill-item">
+                <img src="https://cdn.simpleicons.org/github/181717" alt="GitHub">
+                <div class="skill-name">GitHub</div>
+            </div>
         </div>
-        <div class="section3_form">
+    </section>
+    <section class="section4">
+        <div class="section2_title">
+            <p class="title2" data-section="section4" data-value="title"">Contact</p>
+            <p class="subtitle" data-section="section4" data-value="subtitle">Get in touch with me</p>
+        </div>
+        <div class="section4_form">
             <div class="contactImg" data-aos="zoom-in">
-                <img src="imgs/background/contact3.png" alt="">
-            </div>
-            <div class="contact-info">
-                
-            </div>
-            <!-- <div class="contactForm">
-                <form class="contact-form" data-aos="zoom-in">
-                    <label for="name">Name</label>
-                    <input type="text" id="name" name="name" required>
+            <img src="imgs/background/contactPhoto.png" alt="">
+        </div>
+        <div class="contact-info">
+            <p>I'm open to new possibilities</p>
+            <p>feel free to get in touch.</p>
+            <br><br>
+            <p>Email: pintoslaury@gmail.com</p>
+            <p>linkedin<p>
+        </div>
+    </section>
 
-                    <label for="email">E-mail</label>
-                    <input type="email" id="email" name="email" required>
-
-                    <label for="message">Mensaje</label>
-                    <textarea id="message" name="message" rows="5" required></textarea>
-
-                    <button type="submit">Enviar</button>
-                </form>
-            </div>
-        </div> -->
+    <footer>
+  <div class="footer-container">
+    <!-- Logo personal -->
+    <div class="footer-logo">
+      <img src="imgs/icons/logo.png" alt="Mi logo">
     </div>
+
+    <!-- Iconos sociales -->
+    <div class="footer-icons">
+      <a href="https://www.linkedin.com/in/tuusuario" target="_blank" aria-label="LinkedIn">
+        <img src="https://cdn.simpleicons.org/linkedin/0A66C2" alt="LinkedIn">
+      </a>
+      <a href="https://github.com/tuusuario" target="_blank" aria-label="GitHub">
+        <img src="https://cdn.simpleicons.org/github/fff" alt="GitHub">
+      </a>
+    </div>
+
+    <!-- Créditos -->
+    <div class="footer-bottom">
+      <p>Made for me with 💜 Thanks for visiting </p>
+
+      <a href="https://github.com/tuusuario/repositorio-de-tu-web" target="_blank">
+        Ver repositorio
+      </a>
+    </div>
+  </div>
+</footer>
 
   <script src="script.js"></script>
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
