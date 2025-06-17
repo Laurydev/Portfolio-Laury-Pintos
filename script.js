@@ -1,3 +1,5 @@
+
+// menu fixed
 window.addEventListener("scroll", () => {
   const header = document.getElementById("main-header");
   if (window.scrollY > 50) {
@@ -9,6 +11,7 @@ window.addEventListener("scroll", () => {
 window.onload = function () {
   window.scrollTo(0, 0);
 };
+
 
 //change lenguage
 const langButtons = document.querySelectorAll("[data-language]");
@@ -35,3 +38,11 @@ langButtons.forEach((button) => {
       })
   })
 })
+
+
+const hamburgerBtn = document.querySelector('.hamburger-btn');
+const mobileMenu = document.querySelector('.mobile-menu');
+
+  hamburgerBtn.addEventListener('click', () => {
+    mobileMenu.style.display = mobileMenu.style.display === 'flex' ? 'none' : 'flex';
+  });

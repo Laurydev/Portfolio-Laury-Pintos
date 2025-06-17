@@ -7,7 +7,6 @@
     <link rel="icon" href="imgs/icons/logo.png" type="image/png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link rel="stylesheet" href="style.css">
-
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
@@ -27,7 +26,7 @@
                 </li>
                 <li>
                     <img src="imgs/icons/skill-development.png" alt="">
-                    <a href="#skill" data-section="header" data-value="skill" >Skills</a>
+                    <a href="#skill" data-section="header" data-value="skill">Skills</a>
                 </li>
             </ul>
             <div class="logo animate__animated animate__slideInDown">
@@ -50,18 +49,36 @@
                     <img src="imgs/icons/github.png" alt="">
                     <a href="#github" data-section="header" data-value="github">GitHub</a>
                 </li>
-                <li>
-                    <!-- <div class="btnsLenguage">
-                        <button class="lang-btn active-lang" data-language="en">EN</button>
-                        <button class="lang-btn" data-language="es">ES</button>
-                    </div> -->
-                 
-                </li>
+            </ul>
+        </nav>
+    </header>
+    <header id="mobile-header">
+        <nav class="mobile-navbar" >
+            <div class="mobile-nav-top">
+                <div class="div">
+                    <img src="imgs/icons/logo.png" alt="Logo" class="mobile-logo" />
+                </div>
+                <div class="div">
+                    <button class="lang-btn active-lang" data-language="en">EN</button>
+                    <button class="lang-btn" data-language="es">ES</button>
+                </div>
+                <div class="div">
+                    <button class="hamburger-btn" aria-label="Toggle menu">☰</button>
+                </div>
+                
+            </div>
+            <ul class="mobile-menu">
+                <li><a href="#inicio">Home</a></li>
+                <li><a href="#proyectos">Projects</a></li>
+                <li><a href="#skill">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#linkedin">LinkedIn</a></li>
+                <li><a href="#github">GitHub</a></li>
             </ul>
         </nav>
     </header>
 
-
+    <!-- section 1 desktop -->
     <section class="section1" id="inicio">
         <div class="section1_img">
             <img src="imgs/icons/me.png" alt="">
@@ -83,8 +100,41 @@
                 <img src="imgs/icons/scroll-bar.png" alt="">
             </div>
     </section>
-
+    <!-- section 1 mobile -->
+    <div class="section1-mobile">
+        <div class="section1_img">
+            <img src="imgs/icons/me.png" alt="">
         </div>
+        <div>
+            <p class="title" data-section="section1" data-value="title">Front End Developer</p>
+        </div>
+        <ul class="icon-mobile">
+            <li>
+                <img src="imgs/icons/linkedin-color.png" alt="">
+            </li>
+            <li>
+                <img src="imgs/icons/github-color.png" alt="">
+            </li>
+        </ul>
+        <div class="section1_info">
+            <br><p class="text" data-section="section1" data-value="p1">Hi, I'm Laury. As a front-end developer, 
+            I enjoy creating modern and responsive websites.</p>
+            <p class="text" data-section="section1" data-value="p2">I love design and making each site unique.</p>
+            <!-- <p class="text" data-section="section1" data-value="p3">I'm mostly self-taught and very dedicated to everything I do.</p> -->
+            <!-- <p class="text" data-section="section1" data-value="p4"> I always enjoy learning and trying new tools to improve my work.</p><br> -->
+            <!-- <p class="text" data-section="section1" data-value="p5">I enjoy turning code into something others can see, use, and enjoy.</p>     -->
+            <br><p class="text" data-section="section1" data-value="p6">If you’d like to know more about me or work together, feel free to contact me</p><br>
+        </div>
+        <div class="section1_buttons animate__animated animate__slideInUp">
+            <button data-section="section1" data-value="btn1">Download CV</button>
+            <button data-section="section1" data-value="btn2">Contact me</button>
+        </div>
+        <div class="scroll">
+            <img src="imgs/icons/scroll-bar.png" alt="">
+        </div>
+    </div>
+
+    <!-------- section 2 desktop -------->
     <section class="section2">
         <div class="section2_title">
             <p class="title2" data-section="section2" data-value="title">Some Projects</p>
@@ -235,13 +285,165 @@
                         <button>
                             <a href="https://github.com/Laurydev/Currency-converter" target="_blank" data-section="section2" data-value="btnproj1">View Repository</a>
                         </button>
-                        <button>
+                        <button id="skill">
                             <a href="https://fanciful-medovik-cfbd4e.netlify.app/" target="_blank" data-section="section2" data-value="btnproj2">View Page</a>
                         </button>
                     </div>  
                 </div> 
             </div>
         </div>
+    </section>
+
+        <!-------- SECTION 2 MOBILE -------->
+    <section class="section2_cards-mobile">
+        <div class="section2_title">
+            <p class="title2" data-section="section2" data-value="title">Some Projects</p>
+            <p class="subtitle" data-section="section2" data-value="subtitle">Where code becomes experiences</p>
+        </div>            
+        <!-- project1 -->
+            <div class="allcards">
+                <div class="cardImg">
+                    <img src="imgs/projects/currencyConverterProject.png" alt="">
+                </div>
+
+                <div class="cardInfo_tec">
+                    <p class="html">HTML</p>
+                    <p class="css">CSS</p>
+                    <p class="js">JavaScript</p>
+                </div>
+                
+                <div class="cardInfo_text">
+                    <p data-section="section2Mobile" data-value="proj1">
+                        This online converter helps you calculate the value of any amount between different currencies in seconds.         
+                    </p>
+                </div>
+                    <div class="cardInfo_buttons">
+                        <button>
+                            <a href="https://github.com/Laurydev/Currency-converter" target="_blank" data-section="section2" data-value="btnproj1">View Repository</a>
+                        </button>
+                        <button>
+                            <a href="https://fanciful-medovik-cfbd4e.netlify.app/" target="_blank" data-section="section2" data-value="btnproj2">View Page</a>
+                        </button>
+                    </div>  
+                </div> 
+            </div>
+            <!-- project2 -->
+            <div class="allcards">
+                <div class="cardImg">
+                    <img src="imgs/projects/mornCoffeeEcommerceProject.png" alt="">
+                </div>
+
+                <div class="cardInfo_tec">
+                    <p class="html">HTML</p>
+                    <p class="css">CSS</p>
+                    <p class="js">JavaScript</p>
+                </div>
+                
+                <div class="cardInfo_text">
+                    <p data-section="section2" data-value="proj1">
+                        This online converter helps you calculate 
+                        the value of any amount between different currencies in seconds.         
+                    </p>
+                </div>
+                    <div class="cardInfo_buttons">
+                        <button>
+                            <a href="https://github.com/Laurydev/Currency-converter" target="_blank" data-section="section2" data-value="btnproj1">View Repository</a>
+                        </button>
+                        <button>
+                            <a href="https://fanciful-medovik-cfbd4e.netlify.app/" target="_blank" data-section="section2" data-value="btnproj2">View Page</a>
+                        </button>
+                    </div>  
+                </div> 
+            </div>
+            <!-- project3 -->
+            <div class="allcards">
+                <div class="cardImg">
+                    <img src="imgs/projects/ItaliaPerteProject.png" alt="">
+                </div>
+
+                <div class="cardInfo_tec">
+                    <p class="html">HTML</p>
+                    <p class="tailwind">Tailwind CSS</p>
+                    <p class="js">JavaScript</p>
+                </div>
+                
+                <div class="cardInfo_text">
+                    <p data-section="section2" data-value="proj1">
+                        This online converter helps you calculate 
+                        the value of any amount between different currencies in seconds.         
+                    </p>
+                </div>
+                    <div class="cardInfo_buttons">
+                        <button>
+                            <a href="https://github.com/Laurydev/Currency-converter" target="_blank" data-section="section2" data-value="btnproj1">View Repository</a>
+                        </button>
+                        <button>
+                            <a href="https://fanciful-medovik-cfbd4e.netlify.app/" target="_blank" data-section="section2" data-value="btnproj2">View Page</a>
+                        </button>
+                    </div>  
+                </div> 
+            </div>
+            <!-- project4 -->
+            <div class="allcards">
+                <div class="cardImg">
+                    <img src="imgs/projects/memoryGameProject.png" alt="">
+                </div>
+
+                <div class="cardInfo_tec">
+                    <p class="html">HTML</p>
+                    <p class="tailwind">CSS</p>
+                    <p class="js">JavaScript</p>
+                </div>
+                
+                <div class="cardInfo_text">
+                    <p data-section="section2" data-value="proj1">
+                        This online converter helps you calculate 
+                        the value of any amount between different currencies in seconds.         
+                    </p>
+                </div>
+                    <div class="cardInfo_buttons">
+                        <button>
+                            <a href="https://github.com/Laurydev/Currency-converter" target="_blank" data-section="section2" data-value="btnproj1">View Repository</a>
+                        </button>
+                        <button>
+                            <a href="https://fanciful-medovik-cfbd4e.netlify.app/" target="_blank" data-section="section2" data-value="btnproj2">View Page</a>
+                        </button>
+                    </div>  
+                </div> 
+            </div>
+            <!-- project5 -->
+            <div class="allcards">
+                <div class="cardImg">
+                    <img src="imgs/projects/catGameProject.png" alt="">
+                </div>
+
+                <div class="cardInfo_tec">
+                    <p class="html">HTML</p>
+                    <p class="tailwind">CSS</p>
+                    <p class="js">JavaScript</p>
+                </div>
+                
+                <div class="cardInfo_text">
+                    <p data-section="section2" data-value="proj1">
+                        This online converter helps you calculate 
+                        the value of any amount between different currencies in seconds.         
+                    </p>
+                </div>
+                    <div class="cardInfo_buttons">
+                        <button>
+                            <a href="https://github.com/Laurydev/Currency-converter" target="_blank" data-section="section2" data-value="btnproj1">View Repository</a>
+                        </button>
+                        <button>
+                            <a href="https://fanciful-medovik-cfbd4e.netlify.app/" target="_blank" data-section="section2" data-value="btnproj2">View Page</a>
+                        </button>
+                    </div>  
+                </div> 
+            </div>
+      </div>  
+
+
+
+
     </section>
 
     <section class="section3">
@@ -284,9 +486,9 @@
                 <img src="https://cdn.simpleicons.org/git/F05032" alt="Git">
                 <div class="skill-name">Git</div>
             </div>
-            <div class="skill-item">
+            <div class="skill-item" >
                 <img src="https://cdn.simpleicons.org/github/181717" alt="GitHub">
-                <div class="skill-name">GitHub</div>
+                <div class="skill-name" id="contact">GitHub</div>
             </div>
         </div>
     </section>
@@ -304,6 +506,8 @@
             <p>feel free to get in touch.</p>
             <br><br>
             <p>Email: pintoslaury@gmail.com</p>
+            <p><a href="mailto:destinatario@gmail.com?subject=Asunto del mensaje&body=Texto del mensaje">Enviar mensaje</a>
+</p>
             <p>linkedin<p>
         </div>
     </section>
