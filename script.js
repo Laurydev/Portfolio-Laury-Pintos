@@ -42,7 +42,13 @@ langButtons.forEach((button) => {
 
 const hamburgerBtn = document.querySelector('.hamburger-btn');
 const mobileMenu = document.querySelector('.mobile-menu');
+const links = mobileMenu.querySelectorAll('a');
 
   hamburgerBtn.addEventListener('click', () => {
     mobileMenu.style.display = mobileMenu.style.display === 'flex' ? 'none' : 'flex';
-  });
+});
+ links.forEach(link => {
+    link.addEventListener('click', () => {
+    mobileMenu.style.display = mobileMenu.style.display === 'flex' ? 'none' : 'flex';
+    });
+});

@@ -21,7 +21,6 @@
         "btn2":"Contáctame"
     },
 
-
     "section2":{
         "title": "Mis Proyectos",
         "subtitle":"Donde el código se convierte en experiencias",
@@ -34,12 +33,32 @@
         "btnproj1":"Ver Repositorio",
         "btnproj2":"Ver Página"
     },
+    "section2Mobile":{
+        "title": "Mis Proyectos",
+        "subtitle":"Donde el código se convierte en experiencias",
+        "proj1": "Este conversor online te ayuda a calcular el valor de cualquier cantidad entre diferentes monedas en segundos. Tiene un diseño claro, amigable y completamente adaptable a todos los dispositivos.",
+        "proj2": "Esta tienda online ofrece una experiencia de compra rápida y simple.<br> Los usuarios pueden ver productos con imágenes y descripciones, agregar artículos al carrito, revisar el resumen de compra y usar cupones de descuento para finalizar fácilmente.",
+        "proj3": "Este sitio web está hecho para personas que quieren obtener la ciudadanía italiana.<br> Podés encontrar detalles sobre las diferentes formas de obtener la ciudadanía, ver al abogado italiano, visitar las redes sociales y mucho más.",
+        "proj4": "Este juego de memoria fue creado para poner a prueba la concentración y la agilidad visual del usuario.<br>Ofrece una experiencia rápida, divertida y visualmente atractiva para todas las edades. Es fácil de jugar, pero también te hace pensar.",
+        "proj5": "Este juego fue del Gato y Pelota creado especialmente para niños: es fácil de jugar, divertido y con un buen aspecto visual. Tiene una interfaz amigable y colorida. Solo se necesita un clic para hacer saltar al gato, controles muy simples.",
+
+        "btnproj1":"Ver Repositorio",
+        "btnproj2":"Ver Página"
+    },
     "section3":{
         "title": "Mis Habilidades",
+        "subtitle":"Lo que uso para crear",
         "learning": "Actualmente aprendiendo"
     },
     "section4":{
         "title":"Contacto",
-        "subtitle":"Ponete en contacto conmigo"
+        "subtitle":"Comunicate conmigo.",
+        "text":"Una conversación puede ser el inicio<br>de algo increíble....",
+        "btn1":"Enviame un correo",
+        "btn2":"Contactame por LinkedIn"
+    },
+    "footer":{
+        "text":"Hecho por mí con 💜 Gracias por tu visita",
+        "text-a":"Ver Repositorio"
     }
 }
