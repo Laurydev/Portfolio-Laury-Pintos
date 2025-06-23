@@ -123,15 +123,15 @@ a{
   margin: 0 10px;
   border: none;
   border-radius: 10px;
-  background-color: #9d2acb;
+  background-color:#2b003d;
+  box-shadow:0 0 7px 1px #f3caff;
   color: #f9f9f9;
   font-weight: bold;
   transition: 1s;
 }
 .section1_buttons button:hover{
   transition: 1s;
-  background-color: #e0e0e0;
-  color: #9d2acb;
+  background-color: #440045;
 }
 .scroll{
   margin: 0px 120px;
@@ -250,14 +250,17 @@ a{
   font-weight: bold;
   border: none;
   cursor: pointer;
-    border-radius: 10px;
-  background-color: #9d2acb;
+  border-radius: 10px;
+    background-color:#0e0014;
+  border: none;
+  box-shadow:0 0 7px 1px #f3caff;
+  /* background-color: #9d2acb; */
   color: #f9f9f9;
   transition: 1s;
 }
 .cardInfo_buttons button:hover{
+  background-color: #270028;
   transition: 1s;
-  box-shadow:0 0 7px 1px #f3caff;
 }
 /*section3*/
 .section3{
@@ -315,41 +318,65 @@ a{
   justify-content:center;
 }
 .contact-img img{
-  width: 400px;
-  height: 400px;
+  width: 450px;
+  height: 450px;
 
 }
-.contact-info{
-  color: #e0e0e0;
-  padding-top: 100px;
-  padding-left: 100px;
-}
-.contact-buttons{
-  display: flex;
-  flex-direction: column;
-  padding-top: 10px;
-}
-.contact-buttons button{
-  height: 30px;
-  width: 200px;
-  border: none;
-  border-radius: 10px;
-  text-align: center;
-  background-color: #9d2acb;
-  margin: 20px 0;
-  font-weight: bold;
-  transition: 1s;
-}
-.contact-buttons button:hover{
-  box-shadow:0 0 7px 1px #f3caff;
-  transition: 1s;
 
-}
+
+  /* .contact-form{
+  background-color: rgba(64, 64, 64, 0.1);    height: 430px;
+    width: 550px;
+    border-radius: 20px;
+  } */
+    form {
+      max-width: 400px;
+      margin: 0 0 0 70px;
+      text-align: center;
+    }
+
+    label {
+      display: block;
+      margin-top: 15px;
+      font-weight: bold;
+      color: #e0e0e0;
+    }
+
+    input, textarea {
+      width: 100%;
+      padding: 8px;
+      margin-top: 5px;
+      border: none;
+      border-radius: 10px;
+      color: #e0e0e0;
+      background-color: #0e0014;
+      box-shadow: 0 0 7px 1px #f3caff;
+      text-align: center;
+    }
+
+    form button {
+      font-weight: bold;
+      color: #e0e0e0;
+      margin-top: 30px;
+      height: 40px;
+      width: 100%;
+      border: none;
+      border-radius: 10px;
+      background-color: #0e0014;
+      box-shadow: 0 0 7px 1px #f3caff;
+      transition: 1s;
+      cursor: pointer;
+    }
+
+    form button:hover {
+      transition: 1s;
+      background-color: #270028;
+    }
+
 
 
 /* FOOTER */
   footer {
-  
     background-image: url(imgs/background/wallpaper.png);
     background-repeat: no-repeat;
     background-size: cover;
@@ -385,7 +412,13 @@ a{
     align-items: center;
   }
   .footer-icons img{
+    transition:  1s;
     margin: 0 10px;
+  }
+  .footer-icons img:hover{
+    transition:  1s;
+    margin: 10px 10px;
+
   }
   .footer-icons p{
     font-size: 12px;
@@ -403,9 +436,7 @@ a{
     text-decoration: none;
   }
 
-  .footer-bottom a:hover {
-    text-decoration: underline;
-  }
+
 
 
 
@@ -426,6 +457,7 @@ a{
     background-color: rgba(255, 255, 255, 0.1);
     padding: 10px 16px;
   }
+
   .mobile-navbar {
     width: 100%;
   }
@@ -481,6 +513,9 @@ a{
     margin-top: 20px;
     border-radius: 10px;
   }
+  .mobile-menu.show {
+  display: flex;
+}
 
   .mobile-menu li {
     list-style: none;
@@ -542,7 +577,7 @@ a{
     display: flex;
     font-size: 12px;
     justify-content: center;
-    padding-top: 20px;
+    padding-top: 10px;
   }
   .icon-mobile li{
     margin: 5px 10px;
@@ -657,20 +692,15 @@ a{
   height: 200px;
 
 }
-.contact-info{
-  padding-top: 10px;
-  padding-left: 0px;
-}
-.contact-info p{
-  font-style: italic;
-  font-size: 14px;
-  text-align: center;
-}
-.contact-buttons{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding-top: 10px;
-}
+ form {
+        padding: 10px;
+        margin: 0 50px;
+        font-size: 14px;
+      }
+
+      form button {
+        height: 40px;
+        font-size: 14px;
+      }
 
 }

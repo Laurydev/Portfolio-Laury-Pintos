@@ -12,7 +12,7 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Zeyada&display=swap" rel="stylesheet">
 </head>
-<body>
+<body id="inicio">
     <header id="main-header">
         <nav class="navbar">
             <ul class="nav-links animate__animated animate__slideInLeft" data-aos="zoom-in">
@@ -39,7 +39,7 @@
             <ul class="nav-links animate__animated animate__slideInRight">
                 <li>
                     <img src="imgs/icons/contact.png" alt="">
-                    <a href="#contact" data-section="header" data-value="contact" >Contact</a>
+                    <a href="#contact" data-section="header" data-value="contact">Contact</a>
                 </li>
                 <li>
                     <img src="imgs/icons/linkedin.png" alt="">
@@ -47,7 +47,7 @@
                 </li>
                 <li>
                     <img src="imgs/icons/github.png" alt="">
-                    <a href="#github" data-section="header" data-value="github">GitHub</a>
+                    <a href="https://github.com/Laurydev" target="_blank" data-section="header" data-value="github">GitHub</a>
                 </li>
             </ul>
         </nav>
@@ -68,12 +68,12 @@
                 
             </div>
             <ul class="mobile-menu">
-                <li><a href="#inicio">Home</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#skill">Skills</a></li>
-                <li><a href="#contact">Contact</a></li>
-                <li><a href="#linkedin">LinkedIn</a></li>
-                <li><a href="#github">GitHub</a></li>
+                <li><a href="#inicio" data-section="headerMobile" data-value="home">Home</a></li>
+                <li><a href="#projectsMobile" data-section="headerMobile" data-value="projects">Projects</a></li>
+                <li><a href="#skillMobile" data-section="headerMobile" data-value="skill">Skills</a></li>
+                <li><a href="#contact" data-section="headerMobile" data-value="contact">Contact</a></li>
+                <li><a href="#linkedin" data-section="headerMobile" data-value="linkedin">LinkedIn</a></li>
+                <li><a href="https://github.com/Laurydev" target="_blank" data-section="headerMobile" data-value="github">GitHub</a></li>
             </ul>
         </nav>
     </header>
@@ -93,8 +93,8 @@
             <p data-section="section1" data-value="p5">I enjoy turning code into something others can see, use, and enjoy.</p>    
             <br><p data-section="section1" data-value="p6">If you’d like to know more about me or work together, feel free to contact me</p>
             <div class="section1_buttons animate__animated animate__slideInUp">
-                <button data-section="section1" data-value="btn1">Download CV</button>
-                <button data-section="section1" data-value="btn2">Contact me</button>
+                <button data-section="section1" data-value="btn1"><a href="pdf/prueba-CV-PDF.pdf" download="CV-Pintos-Laury">Download CV</a></button>
+                <button data-section="section1" data-value="btn2"><a href="#contactBtn">Contact me</a></button>
             </div>
             <div class="scroll">
                 <img src="imgs/icons/scroll-bar.png" alt="">
@@ -113,7 +113,7 @@
                 <img src="imgs/icons/linkedin-color.png" alt="">
             </li>
             <li>
-                <img src="imgs/icons/github-color.png" alt="">
+               <a href="https://github.com/Laurydev" target="_blank""><img src="imgs/icons/github-color.png" alt=""></a> 
             </li>
         </ul>
         <div class="section1_info">
@@ -127,7 +127,7 @@
         </div>
         <div class="section1_buttons animate__animated animate__slideInUp">
             <button data-section="section1" data-value="btn1">Download CV</button>
-            <button data-section="section1" data-value="btn2">Contact me</button>
+            <button data-section="section1" data-value="btn2"><a href="#contactBtnMobile">Contact me</a></button>
         </div>
         <div class="scroll" > 
             <img src="imgs/icons/scroll-bar.png" alt="">
@@ -165,7 +165,7 @@
                             <a href="https://github.com/Laurydev/Currency-converter" target="_blank" data-section="section2" data-value="btnproj1">View Repository</a>
                         </button>
                         <button>
-                            <a href="https://fanciful-medovik-cfbd4e.netlify.app/" target="_blank" data-section="section2" data-value="btnproj2">View Page</a>
+                            <a href="https://laurydevcurrencyconverter.netlify.app/" target="_blank" data-section="section2" data-value="btnproj2">View Page</a>
                         </button>
                     </div>  
                 </div> 
@@ -173,7 +173,7 @@
             <!-- project2 -->
             <div>
                 <div class="cardImg"  data-aos="fade-right">
-                    <img src="imgs/projects/mornCoffeeEcommerceProject.png" alt="">
+                    <img src="imgs/projects/greenspirit-EcommerceProject.png" alt="">
                 </div>
                 <div class="cardInfo"  data-aos="fade-left">
                     <div class="cardInfo_tec">
@@ -185,7 +185,7 @@
                         <p data-section="section2" data-value="proj2" >
                             This online store gives a fast, 
                             simple, and fun shopping experience. It’s great for any business that wants
-                            to sell coffee or gourmet products online.<br><br> 
+                            to sell products online.<br><br> 
                             Users can: See products with images and descriptions, 
                             Add items to the cart and check the order summary and 
                             Use discount coupons and finish the purchase easily. 
@@ -193,10 +193,10 @@
                     </div>
                     <div class="cardInfo_buttons" data-aos="fade-left">
                         <button>
-                            <a href="https://github.com/Laurydev/Currency-converter" target="_blank" data-section="section2" data-value="btnproj1">View Repository</a>
+                            <a href="https://github.com/Laurydev/Green-spirit-E-commerce" target="_blank" data-section="section2" data-value="btnproj1">View Repository</a>
                         </button>
                         <button>
-                            <a href="https://fanciful-medovik-cfbd4e.netlify.app/" target="_blank" data-section="section2" data-value="btnproj2">View Page</a>
+                            <a href="https://laurydevgreenspirit.netlify.app/" target="_blank" data-section="section2" data-value="btnproj2">View Page</a>
                         </button>
                     </div>  
                 </div> 
@@ -224,10 +224,10 @@
                     </div>
                     <div class="cardInfo_buttons"  data-aos="fade-left">
                         <button>
-                            <a href="https://github.com/Laurydev/Currency-converter" target="_blank" data-section="section2" data-value="btnproj1">View Repository</a>
+                            <a href="https://github.com/Laurydev/Italia-per-te" target="_blank" data-section="section2" data-value="btnproj1">View Repository</a>
                         </button>
                         <button>
-                            <a href="https://fanciful-medovik-cfbd4e.netlify.app/" target="_blank" data-section="section2" data-value="btnproj2">View Page</a>
+                            <a href="https://italiaperte.netlify.app/" target="_blank" data-section="section2" data-value="btnproj2">View Page</a>
                         </button>
                     </div>  
                 </div> 
@@ -253,10 +253,10 @@
                     </div>
                     <div class="cardInfo_buttons"  data-aos="fade-left">
                         <button>
-                            <a href="https://github.com/Laurydev/Currency-converter" target="_blank" data-section="section2" data-value="btnproj1">View Repository</a>
+                            <a href="https://github.com/Laurydev/Memory-Card-Gamer" target="_blank" data-section="section2" data-value="btnproj1">View Repository</a>
                         </button>
                         <button>
-                            <a href="https://fanciful-medovik-cfbd4e.netlify.app/" target="_blank" data-section="section2" data-value="btnproj2">View Page</a>
+                            <a href="https://laurydevmemorycardgame.netlify.app/" target="_blank" data-section="section2" data-value="btnproj2">View Page</a>
                         </button>
                     </div>  
                 </div> 
@@ -283,10 +283,10 @@
                     </div> 
                     <div class="cardInfo_buttons">
                         <button>
-                            <a href="https://github.com/Laurydev/Currency-converter" target="_blank" data-section="section2" data-value="btnproj1">View Repository</a>
+                            <a href="https://github.com/Laurydev/cat-and-ball-game" target="_blank" data-section="section2" data-value="btnproj1">View Repository</a>
                         </button>
                         <button id="skill">
-                            <a href="https://fanciful-medovik-cfbd4e.netlify.app/" target="_blank" data-section="section2" data-value="btnproj2">View Page</a>
+                            <a href="https://catandballgame.netlify.app/" target="_blank" data-section="section2" data-value="btnproj2">View Page</a>
                         </button>
                     </div>  
                 </div> 
@@ -295,7 +295,7 @@
     </section>
 
         <!-------- SECTION 2 MOBILE -------->
-    <section class="section2_cards-mobile">
+    <section class="section2_cards-mobile" id="projectsMobile">
         <div class="section2_title">
             <p class="title2" data-section="section2" data-value="title">Some Projects</p>
             <p class="subtitle" data-section="section2" data-value="subtitle">Where code becomes experiences</p>
@@ -324,7 +324,7 @@
                             <a href="https://github.com/Laurydev/Currency-converter" target="_blank" data-section="section2" data-value="btnproj1">View Repository</a>
                         </button>
                         <button>
-                            <a href="https://fanciful-medovik-cfbd4e.netlify.app/" target="_blank" data-section="section2" data-value="btnproj2">View Page</a>
+                            <a href="https://laurydevcurrencyconverter.netlify.app/" target="_blank" data-section="section2" data-value="btnproj2">View Page</a>
                         </button>
                     </div>  
                 </div> 
@@ -332,7 +332,7 @@
             <!-- project2 -->
             <div class="allcards" data-aos="zoom-in">
                 <div class="cardImg">
-                    <img src="imgs/projects/mornCoffeeEcommerceProject.png" alt="">
+                    <img src="imgs/projects/greenspirit-EcommerceProject.png" alt="">
                 </div>
 
                 <div class="cardInfo_tec">
@@ -350,10 +350,10 @@
                 </div>
                     <div class="cardInfo_buttons">
                         <button>
-                            <a href="https://github.com/Laurydev/Currency-converter" target="_blank" data-section="section2" data-value="btnproj1">View Repository</a>
+                            <a href="https://github.com/Laurydev/Green-spirit-E-commerce" target="_blank" data-section="section2" data-value="btnproj1">View Repository</a>
                         </button>
                         <button>
-                            <a href="https://fanciful-medovik-cfbd4e.netlify.app/" target="_blank" data-section="section2" data-value="btnproj2">View Page</a>
+                            <a href="https://laurydevgreenspirit.netlify.app/" target="_blank" data-section="section2" data-value="btnproj2">View Page</a>
                         </button>
                     </div>  
                 </div> 
@@ -379,10 +379,10 @@
                 </div>
                     <div class="cardInfo_buttons">
                         <button>
-                            <a href="https://github.com/Laurydev/Currency-converter" target="_blank" data-section="section2" data-value="btnproj1">View Repository</a>
+                            <a href="https://github.com/Laurydev/Italia-per-te" target="_blank" data-section="section2" data-value="btnproj1">View Repository</a>
                         </button>
                         <button>
-                            <a href="https://fanciful-medovik-cfbd4e.netlify.app/" target="_blank" data-section="section2" data-value="btnproj2">View Page</a>
+                            <a href="https://italiaperte.netlify.app/" target="_blank" data-section="section2" data-value="btnproj2">View Page</a>
                         </button>
                     </div>  
                 </div> 
@@ -408,10 +408,10 @@
                 </div>
                     <div class="cardInfo_buttons">
                         <button>
-                            <a href="https://github.com/Laurydev/Currency-converter" target="_blank" data-section="section2" data-value="btnproj1">View Repository</a>
+                            <a href="https://github.com/Laurydev/Memory-Card-Game" target="_blank" data-section="section2" data-value="btnproj1">View Repository</a>
                         </button>
                         <button>
-                            <a href="https://fanciful-medovik-cfbd4e.netlify.app/" target="_blank" data-section="section2" data-value="btnproj2">View Page</a>
+                            <a href="https://laurydevmemorycardgame.netlify.app/" target="_blank" data-section="section2" data-value="btnproj2">View Page</a>
                         </button>
                     </div>  
                 </div> 
@@ -437,23 +437,19 @@
                 </div>
                     <div class="cardInfo_buttons">
                         <button>
-                            <a href="https://github.com/Laurydev/Currency-converter" target="_blank" data-section="section2" data-value="btnproj1">View Repository</a>
+                            <a href="https://github.com/Laurydev/cat-and-ball-game" target="_blank" data-section="section2" data-value="btnproj1">View Repository</a>
                         </button>
                         <button>
-                            <a href="https://fanciful-medovik-cfbd4e.netlify.app/" target="_blank" data-section="section2" data-value="btnproj2">View Page</a>
+                            <a href="https://catandballgame.netlify.app/" target="_blank" data-section="section2" data-value="btnproj2">View Page</a>
                         </button>
                     </div>  
                 </div> 
             </div>
-      </div>  
-
-
-
-
+        </div>  
     </section>
 
-    <section class="section3">
-        <p class="title2" data-section="section3" data-value="title">My Skills</p>
+    <section class="section3" id="skill">
+        <p class="title2" data-section="section3" data-value="title" id="skillMobile">My Skills</p>
         <p class="subtitle" data-section="section3" data-value="subtitle">What I use to create</p>
 
         
@@ -494,13 +490,13 @@
                 <div class="skill-name">Git</div>
             </div>
             <div class="skill-item" data-aos="flip-up">
-                <img src="https://cdn.simpleicons.org/github/181717" alt="GitHub">
-                <div class="skill-name" id="contact">GitHub</div>
+                <img src="https://cdn.simpleicons.org/github/181717" alt="GitHub" >
+                <div class="skill-name" id="contactBtn">GitHub</div>
             </div>
         </div>
     </section>
-    <section class="section4" >
-        <div class="section2_title" >
+    <section class="section4" id="contact">
+        <div class="section2_title"  id="contactBtnMobile">
             <p class="title2" id="contact" data-section="section4" data-value="title"">Contact</p>
             <p class="subtitle" data-section="section4" data-value="subtitle">Get in touch with me</p>
         </div>
@@ -509,19 +505,36 @@
             <div class="contact-img" data-aos="zoom-in">
                 <img src="imgs/background/contactPhoto.png" alt="">
             </div>
-            <div class="contact-info" >
-                <p data-section="section4" data-value="text">A conversation can be the beginning<br>of something amazing...</p>
-                <div class="contact-buttons" data-aos="zoom-in">
-                    <button data-section="section4" data-value="btn1"> <a href="mailto:pintoslaury13@gmail.com?subject=Asunto del mensaje&body=Texto del mensaje"> Send me an email</a></button>
-                    <button data-section="section4" data-value="btn2"> <a href="">Contact me on LinkedIn</a></button>
+            
+                <!-- <p data-section="section4" data-value="text">A conversation can be the beginning<br>of something amazing</p> -->
+                <div class="contact-form" data-aos="zoom-in">
+
+                    <form id="formulario">
+                        <label for="nombre" data-section="section4" data-value="name">Name:</label>
+                        <input type="text" id="nombre" name="nombre" required>
+
+    
+
+                        <label for="email" data-section="section4" data-value="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+
+                        <label for="mensaje" data-section="section4" data-value="message">Message:</label>
+                        <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+
+                        <button type="submit" data-section="section4" data-value="submit">Submit</button>
+                     </form>
+                   
+                        <!-- <button data-section="section4" data-value="btn1"> <a href="mailto:pintoslaury13@gmail.com?subject=Asunto del mensaje&body=Texto del mensaje"> Send me an email</a></button>
+              
+                        <button data-section="section4" data-value="btn2"> <a href="">Contact me on LinkedIn</a></button> -->
+                    
                 </div>
             </div>
-        </div>
+        
     </section>
 
     <footer>
         <div class="footer-container">
-        
                <!-- Logo personal -->
             <div class="footer-logo">
                 <img src="imgs/icons/logo.png" alt="Mi logo">
@@ -531,12 +544,15 @@
                     <a href="https://www.linkedin.com/in/tuusuario" target="_blank" aria-label="LinkedIn">
                         <img src="imgs/icons/linkedin-color.png" alt="LinkedIn">
                     </a>
-                    <a href="https://github.com/tuusuario" target="_blank" aria-label="GitHub">
+                    <a href="https://github.com/Laurydev" target="_blank" aria-label="GitHub">
                         <img src="imgs/icons/github-color.png" alt="GitHub">
                     </a>
                     <a href="https://github.com/tuusuario" target="_blank" aria-label="GitHub">
                         <img src="imgs/icons/mensajes.png" alt="GitHub">
                     </a>
+                </div>
+                <div>
+                    <p>laurydev@laury.com</p>
                 </div>
             </div>
     

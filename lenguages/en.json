@@ -7,8 +7,15 @@
        "linkedin": "LinkedIn",
        "github":"GitHub"
     },
+    "headerMobile":{
+       "home" : "Home",
+       "projects": "Projects",
+       "skill":"Skills",
+       "contact": "Contact",
+       "linkedin": "LinkedIn",
+       "github":"GitHub"
+    },
     
-
     "section1":{
         "title":"Front-End Developer",
         "p1": "Hi, I'm Laury. As a front-end developer, I enjoy creating modern and responsive websites.",
@@ -25,7 +32,7 @@
         "title":"Some Projects",
         "subtitle":"Where code becomes experiences",
         "proj1": "This online converter helps you calculate the value of any amount between different currencies in seconds. It’s easy to use, fast, and gives accurate results. <br><br> Designed with a clear, friendly and fully responsive interface.",
-        "proj2": "This online store gives a fast and simple shopping experience. It’s great for any business that wants to sell coffee or gourmet products online.<br><br> Users can: See products with images and descriptions, Add items to the cart and check the order summary and Use discount coupons and finish the purchase easily.",
+        "proj2": "This online store gives a fast and simple shopping experience. It’s great for any business that wants to sell products online.<br><br> Users can: See products with images and descriptions, Add items to the cart and check the order summary and Use discount coupons and finish the purchase easily.",
         "proj3": "This website is made for people who want to get Italian citizenship. It has a clear structure and is easy to use. The information is organized, reliable, and looks good. <br><br> You can find details about different ways to get citizenship, see the Italian lawyer, visit social media pages, and more. It is a great site for anyone who wants to offer a service in a clear and nice way.",
         "proj4": "This memory game was made to test the user’s focus and visual speed.<br><br>The goal is simple: find all the matching card pairs using the fewest tries. It gives a fast, fun, and nice-looking experience for all ages. The game is easy to play, but it also makes you think.",
         "proj5": "This game was made especially for kids: it’s easy to play, fun, and looks nice. It has a friendly and colorful interface. Just one click makes the cat jump — very simple controls. <br> <br> Great for children: it helps with reflexes, focus, and coordination. Soft animations and cute visuals make the game more friendly.",
@@ -52,9 +59,11 @@
     "section4":{
         "title":"Contact",
         "subtitle":"Get in touch with me",
-        "text":"A conversation can be the beginning<br> of something amazing...",
-        "btn1":"Send me an email",
-        "btn2":"Contact me on LinkedIn"
+        "name":"Name",
+        "email":"Email",
+        "message":"Message",
+        "submit":"Submit"
+
     },
 
     "footer":{
