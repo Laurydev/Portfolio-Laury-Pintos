@@ -509,11 +509,10 @@
                 <!-- <p data-section="section4" data-value="text">A conversation can be the beginning<br>of something amazing</p> -->
                 <div class="contact-form" data-aos="zoom-in">
 
-                    <form id="formulario">
+                    <form name=""contact method="post" data-netlify="true"  onsubmit="submit">
+
                         <label for="nombre" data-section="section4" data-value="name">Name:</label>
                         <input type="text" id="nombre" name="nombre" required>
-
-    
 
                         <label for="email" data-section="section4" data-value="email">Email:</label>
                         <input type="email" id="email" name="email" required>
@@ -522,7 +521,8 @@
                         <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
 
                         <button type="submit" data-section="section4" data-value="submit">Submit</button>
-                     </form>
+                        <div id="respuesta"></div>
+                    </form>
                    
                         <!-- <button data-section="section4" data-value="btn1"> <a href="mailto:pintoslaury13@gmail.com?subject=Asunto del mensaje&body=Texto del mensaje"> Send me an email</a></button>
               
@@ -552,7 +552,7 @@
                     </a>
                 </div>
                 <div>
-                    <p>laurydev@laury.com</p>
+                    <p>hello@laurydev.com</p>
                 </div>
             </div>
     
